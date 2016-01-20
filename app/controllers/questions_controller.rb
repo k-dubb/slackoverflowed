@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
+  before_filter :authenticate_user!, :user_signed_in?, :current_user, :user_session
   before_action :set_question, only: [:show, :edit, :update, :destroy]
-
   # GET /questions
   # GET /questions.json
   def index

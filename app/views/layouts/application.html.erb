@@ -6,7 +6,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <%= csrf_meta_tags %>
-        <link href='https://fonts.googleapis.com/css?family=Work+Sans:500' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand pull-left brand" href="#">
+        <a class="navbar-brand pull-left brand" href="/questions">
           <%= image_tag 'SlackOverflow_Logo.png'%>
         </a>
         <ul class="nav nav-pills pull-right">
@@ -38,7 +38,7 @@
 
   <%= yield %>
 
-<script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
+    <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
 </body>
 
 </html>

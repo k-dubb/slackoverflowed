@@ -2,11 +2,8 @@
 
 <p id="notice"><%= notice %></p>
 
-<<<<<<< HEAD
-<h1>THIS IS HOME PAGE</h1>
-=======
+
 <h2>Your recent questions:</h2>
->>>>>>> 4956a9152edb67af4e8098d0b4014e1d66fa4ddd
 
 <table>
   <thead>
@@ -26,7 +23,7 @@
       <% if count >= 5%>
         <% break %>
       <% else %>
-        <% if @questions[user_id] === current_user.id
+        <% if @questions[:user_id] === current_user.id
           count += 1 %>
         <tr>
           <td><%= link_to 'Show', question %></td>

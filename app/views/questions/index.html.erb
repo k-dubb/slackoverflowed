@@ -13,26 +13,12 @@
   </thead>
 
   <tbody>
-    <div></div>
 
 
+    <%@questions_asked.each do |question|%>
+  <div><%=question.body%></div>
+  <% end %>
 
-    <% @questions.each do |question| %>
-      <!-- using the foreign key of user_id in the question object to be equal to the current users id in the session -->
-      <% count = 0 %>
-      <% if count >= 5%>
-        <% break %>
-      <% else %>
-        <% if @questions.pluck(:user_id) === current_user.id
-          count += 1 %>
-        <tr>
-          <td><%= link_to 'Show', question %></td>
-          <td><%= link_to 'Edit', edit_question_path(question) %></td>
-          <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-        <%end%>
-      <% end %>
-    <% end %>
   </tbody>
 </table>
 

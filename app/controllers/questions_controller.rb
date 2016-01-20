@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     @questions = Question.all
-    @user_id = @questions[user_id]
+    @user_id = @questions.pluck(:user_id)
   end
 
   # GET /questions/1

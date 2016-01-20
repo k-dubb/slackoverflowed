@@ -8,11 +8,9 @@
 
 
 
-  <%@questions.each do |question|%>
-    <div class='userQuestions'><%=question.body%></div>
-  <% end %>
-
-
+    <%@user_questions.each do |question|%>
+        <div class='userQuestions'><%= link_to question.body, question_path(question.id)%></div>
+    <% end %>
 
 
 <br>
@@ -20,6 +18,7 @@
 <%= link_to 'Got a question?', new_question_path %>
 
 <h2>All recent questions:</h2>
+
 
   <%@questions_asked.each do |question|%>
   <div class ='allQuestions'><%=question.body%></div>

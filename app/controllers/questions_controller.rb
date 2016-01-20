@@ -4,9 +4,12 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
-    @questions = Question.all
-    # @current_user = Question.order(user_id: :desc)
-    @questions_asked = Question.order(created_at: :desc).select(:body).limit(5)
+    # @questions = Question.all
+    @questions = current_user.questions.limit(5)
+    @current_user = current_user.id
+    @user_questions = Question.where(user_id: @current_user).order(created_at: :desc).select(:body).limit(5)
+
+    @questions_asked = Question.order(created_at: :desc).select(:body)
   end
 
   # GET /questions/1

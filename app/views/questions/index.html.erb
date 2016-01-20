@@ -5,26 +5,22 @@
 
 <h2>Your recent questions:</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
 
 
-    <%@questions_asked.each do |question|%>
-  <div><%=question.body%></div>
+
+  <%@questions.each do |question|%>
+    <div><%=question.body%></div>
   <% end %>
 
-  </tbody>
-</table>
+
+
 
 <br>
 
 <%= link_to 'Got a question?', new_question_path %>
 
 <h2>All recent questions:</h2>
-</div>
+
+  <%@questions_asked.each do |question|%>
+  <div><%=question.body%></div>
+  <% end %>

@@ -6,7 +6,7 @@ class QuestionsController < ApplicationController
   def index
     @questions = Question.all
     @current_user = current_user.id
-    @questions_asked = Question.order(created_at: :desc).select(:body).last(5)
+    @questions_asked = Question.order(created_at: :desc).select(:id, :body).limit(5)
   end
 
   # GET /questions/1

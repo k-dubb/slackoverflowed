@@ -14,10 +14,9 @@
 
   <tbody>
 
-
     <%@questions_asked.each do |question|%>
-  <div><%=question.body%></div>
-  <% end %>
+        <div><%= link_to question.body, question_path(question.id)%></div>
+    <% end %>
 
   </tbody>
 </table>
@@ -27,4 +26,7 @@
 <%= link_to 'Got a question?', new_question_path %>
 
 <h2>All recent questions:</h2>
+
+
+
 </div>

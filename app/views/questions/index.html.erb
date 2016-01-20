@@ -2,7 +2,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Questions</h1>
+<h1>THIS IS HOME PAGE</h1>
 
 <table>
   <thead>
@@ -12,12 +12,25 @@
   </thead>
 
   <tbody>
+    <div></div>
+
+
+
     <% @questions.each do |question| %>
-      <tr>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
-        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <!-- using the foreign key of user_id in the question object to be equal to the current users id in the session -->
+      <% count = 0 %>
+      <% if count >= 5%>
+        <% break %>
+      <% else %>
+        <% if @questions[user_id] === current_user.id
+          count += 1 %>
+        <tr>
+          <td><%= link_to 'Show', question %></td>
+          <td><%= link_to 'Edit', edit_question_path(question) %></td>
+          <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <%end%>
+      <% end %>
     <% end %>
   </tbody>
 </table>

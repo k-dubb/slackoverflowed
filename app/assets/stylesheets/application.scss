@@ -13,6 +13,57 @@
  *= require_tree .
  *= require_self
  */
- // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+html {
+  body {
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 1em;
+    background-color: #f58120;
+    color: #323a4a;
+    .navbar {
+      background-color: #F5FEF4;
+      .brand {
+        height: 15px;
+        img {
+          height: 40px;
+          margin-top: -.5em;
+        }
+      }
+    }
+    #fields {
+      margin-top: 6em;
+      #remember {
+        font-size: .7em;
+      }
+      input {
+        background-color: #F5FEF4;
+        margin-bottom: .75em;
+      }
+      label {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 4em;
+        color: #F5FEF4;
+        margin-bottom: .5em;
+      }
+      .button {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+        margin-bottom: .5em;
+      }
+    }
+  }
+}
+a:link,
+a:active,
+a:visited {
+  font-size: 1.5em;
+  color: #F5FEF4;
+}
+a:hover {
+  color: #323a4a;
+  text-decoration: none;
+}

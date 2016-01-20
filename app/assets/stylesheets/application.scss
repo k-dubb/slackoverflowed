@@ -31,19 +31,19 @@ html {
           margin-top: -.5em;
         }
       }
-      .nav-pills {
+      .nav-pills, .nav-pills a:hover {
         background-color: #323a4a;
-        color: #323a4a;
+        color: #F5FEF4;
       }
     }
     #fields {
       margin-top: 6em;
       #remember {
-        font-size: .7em;
+        font-size: 0.7em;
       }
       input {
         background-color: #F5FEF4;
-        margin-bottom: .75em;
+        margin-bottom: 0.75em;
       }
       label {
         font-size: 2em;
@@ -51,12 +51,12 @@ html {
       h2 {
         font-size: 4em;
         color: #F5FEF4;
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
       }
       .button {
         font-size: 1.5em;
         margin-top: 0.5em;
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
       }
     }
   }

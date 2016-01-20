@@ -23,7 +23,7 @@
       <% if count >= 5%>
         <% break %>
       <% else %>
-        <% if @questions[:user_id] === current_user.id
+        <% if @questions[@user_id] === current_user.id
           count += 1 %>
         <tr>
           <td><%= link_to 'Show', question %></td>

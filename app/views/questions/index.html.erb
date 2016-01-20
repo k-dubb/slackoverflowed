@@ -9,7 +9,7 @@
 
 
   <%@questions.each do |question|%>
-    <div><%=question.body%></div>
+    <div class='userQuestions'><%=question.body%></div>
   <% end %>
 
 
@@ -22,5 +22,5 @@
 <h2>All recent questions:</h2>
 
   <%@questions_asked.each do |question|%>
-  <div><%=question.body%></div>
+  <div class ='allQuestions'><%=question.body%></div>
   <% end %>

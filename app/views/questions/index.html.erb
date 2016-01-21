@@ -2,16 +2,12 @@
 
 <p id="notice"><%= notice %></p>
 
-
 <h2>Your recent questions:</h2>
   <div><%= render 'form' %></div>
-
-
 
     <%@questions.each do |question|%>
         <div class='userQuestions'><%= link_to question.body, question_path(question.id)%></div>
     <% end %>
-
 
 <br>
 
@@ -19,7 +15,6 @@
 
 <h2>All recent questions:</h2>
 
-
-  <%@questions_asked.each do |question|%>
-  <div class ='allQuestions'><%=question.body%></div>
-  <% end %>
+    <%@questions_asked.each do |question|%>
+        <div class ='allQuestions'><%= link_to question.body, question_path(question.id)%></div>
+    <% end %>

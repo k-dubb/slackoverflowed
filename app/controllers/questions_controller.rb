@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
-    @questions = current_user.questions.limit(5).order(created_at: :desc).select(:id, :body)
+    @questions = current_user.questions.limit(5)
 
     #@user_questions = Question.order(created_at: :desc).select(:id, :body).limit(5)
 
@@ -16,6 +16,7 @@ class QuestionsController < ApplicationController
   # GET /questions/1
   # GET /questions/1.json
   def show
+
   end
 
   # GET /questions/new

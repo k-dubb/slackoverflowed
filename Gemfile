@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'sunspot_rails'
+gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

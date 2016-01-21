@@ -30,21 +30,13 @@ to nav bar: changed to “Hello, username!”
                 <%= image_tag 'SlackOverflow_LogoMark.png'%>
               </a>
 
-                  <%= form_for @question, :html => {:class => "form-horizontal center"} do |f| %>
-                      <div class="form-group">
-                        <%= f.label :questions %>
-                        <div class="col-md-5">
-                          <%= f.text_field :body, class: "form-control", :placeholder => "hello" %>
-                      <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
-                 <% end %>
-                        </div>
-                      </div>
 
+                  <%= yield(:question_bar) %>
 
 
 
                     <div class= "nav_log_out">
-                      <% if user_signed_in? %> Hello, <strong><%= current_user.username %>!</strong> 
+                      <% if user_signed_in? %> Hello, <strong><%= current_user.username %>!</strong>
                         <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
                       <% end %>
                   </div>

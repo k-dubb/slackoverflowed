@@ -6,14 +6,39 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-require 'faker'
-include Faker
+user = User.create! :username => 'John Doe', :email => 'john@gmail.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'seeds', :email => 'levi@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => '1seeds', :email => 'david@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => '2seeds', :email => 'kelli@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => '3seeds', :email => 'Jrizz@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => '4seeds', :email => 'My@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => '5seeds', :email => 'notMy@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => '6seeds', :email => 'getYourOwn@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => '7seeds', :email => 'HaveMy@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => '8seeds', :email => 'spread@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
 
-20.times do 
-    user = Users.create (
-        user.email = Faker::Internet.email 
-        user.user_name = Faker::Internet.user_name 
-        user.password = Faker::Internet.password(8) 
-    )
-    puts user.inspect 
-end
+
+question = Question.create! :body => 'yay', :user_id => '1'
+question = Question.create! :body => 'yay', :user_id => '2'
+question = Question.create! :body => 'yay', :user_id => '3'
+question = Question.create! :body => 'yay', :user_id => '4'
+question = Question.create! :body => 'yay', :user_id => '5'
+question = Question.create! :body => 'yay', :user_id => '6'
+question = Question.create! :body => 'yay', :user_id => '7'
+question = Question.create! :body => 'yay', :user_id => '8'
+question = Question.create! :body => 'yay', :user_id => '9'
+question = Question.create! :body => 'yay', :user_id => '10'
+
+
+
+
+
+
+
+
+
+
+
+
+
+

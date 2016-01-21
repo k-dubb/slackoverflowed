@@ -24,7 +24,7 @@
         <div class="nav_log_out">
           <% if user_signed_in? %>
           Hello,
-          <p><%= current_user.username %>!</p>
+          <div id="user"><%= current_user.username %>!</div>
           <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'nav nav-pills'  %>
           <% end %>
         </div>

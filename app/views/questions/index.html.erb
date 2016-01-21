@@ -4,11 +4,11 @@
 
 
 <h2>Your recent questions:</h2>
+  <div><%= render 'form' %></div>
 
 
 
-
-    <%@user_questions.each do |question|%>
+    <%@questions.each do |question|%>
         <div class='userQuestions'><%= link_to question.body, question_path(question.id)%></div>
     <% end %>
 

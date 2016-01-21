@@ -19,21 +19,25 @@
 html {
   body {
     font-family: 'Work Sans', sans-serif;
-    margin-left: 1em;
+    font-size: 2em;
     background-color: #f58120;
     color: #323a4a;
+    padding-right: 0px;
     .navbar {
-      background-color: #F5FEF4;
+      background-color: #ffffff;
+      border-bottom: none;
+      margin-bottom: 0;
       .brand {
         height: 15px;
         img {
           height: 40px;
-          margin-top: -.5em;
+          margin-top: -.35em;
         }
       }
-      .nav-pills, .nav-pills a:hover {
-        background-color: #323a4a;
-        color: #F5FEF4;
+      .actionbar {
+        margin-top: 0.45em;
+        min-width: 97%;
+        max-width: 97%;
       }
     }
     #fields {
@@ -42,15 +46,15 @@ html {
         font-size: 0.7em;
       }
       input {
-        background-color: #F5FEF4;
+        background-color: #ffffff;
         margin-bottom: 0.75em;
       }
       label {
         font-size: 2em;
       }
       h2 {
-        font-size: 4em;
-        color: #F5FEF4;
+        font-size: 3em;
+        color: #ffffff;
         margin-bottom: 0.5em;
       }
       .button {
@@ -65,13 +69,13 @@ a:link,
 a:active,
 a:visited {
   font-size: 1.5em;
-  color: #F5FEF4;
+  color: #ffffff;
 }
 a:hover {
   color: #323a4a;
   text-decoration: none;
 }
 label {
-  color: #F5FeF4;
+  color: #ffffff;
   font-weight: normal;
 }

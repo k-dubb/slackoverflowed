@@ -3,7 +3,7 @@
 <p id="notice"><%= notice %></p>
 
 <h2>Your questions:</h2>
-   <div><%= render 'form' %></div>
+   <!-- <div><%= render 'form' %></div> -->
 
     <%@questions.each do |question|%>
         <div class='userQuestions'><%= link_to question.body, question_path(question.id)%></div>

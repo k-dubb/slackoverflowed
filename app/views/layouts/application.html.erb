@@ -1,59 +1,72 @@
-kdubb branch:
-
-application.html
-to nav bar: changed to “Hello, username!”
-
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Slackoverflowed</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <head>
+    <title>Slackoverflowed</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-      <%= csrf_meta_tags %>
-        <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800' rel='stylesheet' type='text/css'>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+  </head>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 
-      <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand pull-left brand" href="/questions">
-                <%= image_tag 'SlackOverflow_LogoMark.png'%>
-              </a>
-              <div class="actionbar">
-                <div class="input-group">
-                  <input type="text" class="form-control" maxlength="140" placeholder="Ask a 140 Character Question. Brevity is the soul of wit">
-                  <span class="input-group-btn">
+        <body>
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand pull-left brand" href="/questions">
+                  <%= image_tag 'SlackOverflow_LogoMark.png'%>
+                </a>
+                <div class="actionbar">
+                  <div class="input-group">
+
+                    <!--deprecated question submission -->
+                    <!-- <input type="text" class="form-control" maxlength="140" placeholder="Ask a 140 Character Question. Brevity is the soul of wit">
+                    <span class="input-group-btn">
                       <button class="btn btn-default" type="button">Ask</button>
                       <button type="button" class="btn btn-default">Logout</button>
-                    </span>
-                    <div class= "nav_log_out">
-                      <% if user_signed_in? %> Hello, <strong><%= current_user.username %>!</strong> 
-                        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                    </span> -->
+
+                    <!-- question submission -->
+                    <%= form_for @question, :html => {:class => "form-horizontal center"} do |f| %>
+                    <div class="form-group">
+                      <%= f.label :questions %>
+                      <div class="col-md-5">
+                        <%= f.text_field :body, class: "form-control", :placeholder => "hello" %>
+                        <%= f.submit "Submit", class: "btn btn-default" %>
+                        <% end %>
+                      </div>
+                    </div>
+
+                    <!-- user logout -->
+                    <div class="nav_log_out">
+                      <% if user_signed_in? %>
+                      Hello,
+                      <strong><%= current_user.username %>!</strong>
+                      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
                       <% end %>
-                  </div>   
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
 
-        <%= yield %>
+          <%= yield %>
 
           <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
-      </body>
-    </div>
+        </body>
+      </div>
 
+    </div>
   </div>
-</div>
 
 </html>

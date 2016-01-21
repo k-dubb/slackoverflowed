@@ -26,24 +26,24 @@
               </a>
               <div class="actionbar">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search for...">
+                  <input type="text" class="form-control" maxlength="140" placeholder="Ask a 140 Character Question. Brevity is the soul of wit">
                   <span class="input-group-btn">
                       <button class="btn btn-default" type="button">Ask</button>
+                      <button type="button" class="btn btn-default">Logout</button>
                     </span>
                 </div>
               </div>
             </div>
           </div>
         </nav>
+
+        <%= yield %>
+
+          <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
+      </body>
     </div>
 
-
-    <%= yield %>
-
-      <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
-      </body>
   </div>
-</div>
 </div>
 
 </html>

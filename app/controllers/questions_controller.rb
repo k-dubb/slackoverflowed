@@ -79,12 +79,4 @@ class QuestionsController < ApplicationController
       params.require(:question).permit(:body)
     end
 
-    # Controller for Sunspot search
-
-    def search
-    @search = Post.search(:include => [:comments]) do
-      keywords(params[:q])
-    end
-  end
-
 end

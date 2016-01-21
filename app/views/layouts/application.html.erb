@@ -26,28 +26,24 @@
               </a>
               <div class="actionbar">
                 <div class="input-group">
-                  <input type="text" class="form-control" maxlength="140" placeholder="140 character questions or queries. Brevity is the soul of wit." aria-label="...">
-                  <div class="input-group-btn">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                      <li><a href="#">Ask a question</a></li>
-                      <li><a href="#">Search for an answer</a>
-
-                      </li>
-                    </ul>
-                  </div>
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Ask</button>
+                    </span>
                 </div>
               </div>
             </div>
           </div>
         </nav>
-
-        <%= yield %>
-
-          <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
-      </body>
     </div>
+
+
+    <%= yield %>
+
+      <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
+      </body>
   </div>
+</div>
 </div>
 
 </html>

@@ -19,7 +19,7 @@
 a:link,
 a:active,
 a:visited {
-  font-size: 1.5em;
+  font-size: 1em;
   color: #323a4a;
 }
 a:hover {
@@ -66,17 +66,27 @@ html {
     #fields {
       margin-top: 6em;
       #remember {
-        font-size: 0.7em;
-      }
+    }
+    #notice{
+      font-size: 1em;
+      color: #323a4a;
+    }
+    #fields label{
+      font-family: 'Work Sans', sans-serif;
+      font-size: 2em;
+      color: white;
+    }
       input {
         background-color: #ffffff;
         margin-bottom: 0.75em;
       }
       label {
-        font-size: 2em;
-      }
+        font-size: 2.5em;
+        color: #ffffff; 
+        font-family: 'Work Sans', sans-serif;
+     }
       h2 {
-        font-size: 3em;
+        font-size: 2.5em;
         color: #ffffff;
         margin-top: 1em;
       }
@@ -89,7 +99,31 @@ html {
     .content {
       margin-left: 1em;
       margin-right: 1em;
-
     }
   }
+}
+p {
+ color: white;
+ font-size: 2em; 
+}
+#user{
+ color: black;
+ font-size: 1em;
+}
+h3{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+  color: white;
+  text-decoration: underline; 
+}
+.field{
+  font-size: .7em;
+  color: #ffffff;
+  text-decoration: none;
+}
+.field label {
+  color: black;
+}
+#question_body, #user_email, #user_password{
+  color: black;
 }

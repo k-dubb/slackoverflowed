@@ -16,17 +16,37 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+a:link,
+a:active,
+a:visited {
+  font-size: 1.5em;
+  color: #323a4a;
+}
+a:hover {
+  color: #323a4a;
+  text-decoration: none;
+}
+.nav_log_out {
+  font-size: 1em;
+  text-align: right;
+  color: #323a4a;
+}
+.navbar-link {
+  padding-left: 0.75em;
+  color: #337ab7;
+}
 html {
   body {
     font-family: 'Work Sans', sans-serif;
     font-size: 2em;
     background-color: #f58120;
     color: #323a4a;
-    padding-right: 0;
     .navbar {
       background-color: #ffffff;
       border-bottom: none;
       margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
       .brand {
         height: 15px;
         img {
@@ -66,24 +86,10 @@ html {
         margin-bottom: 0.5em;
       }
     }
+    .content {
+      margin-left: 1em;
+      margin-right: 1em;
+
+    }
   }
-}
-a:link,
-a:active,
-a:visited {
-  font-size: 1.5em;
-  color: #323a4a;
-}
-a:hover {
-  color: #323a4a;
-  text-decoration: none;
-}
-.nav_log_out {
-  font-size: 1em;
-  text-align: right;
-  color: #323a4a;
-}
-.navbar-link {
-  padding-left: 0.75em;
-  color: #337ab7;
 }

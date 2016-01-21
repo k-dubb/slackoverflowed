@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     @questions = current_user.questions.limit(5).order(created_at: :desc).select(:id, :body)
-    
+
     #@user_questions = Question.order(created_at: :desc).select(:id, :body).limit(5)
 
     @questions_asked = Question.order(created_at: :desc).select(:id, :body)
@@ -77,4 +77,13 @@ class QuestionsController < ApplicationController
     def question_params
       params.require(:question).permit(:body)
     end
+
+    # Controller for Sunspot search
+
+    def search
+    @search = Post.search(:include => [:comments]) do
+      keywords(params[:q])
+    end
+  end
+
 end

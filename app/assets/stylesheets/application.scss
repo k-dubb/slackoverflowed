@@ -22,7 +22,7 @@ html {
     font-size: 2em;
     background-color: #f58120;
     color: #323a4a;
-    padding-right: 0px;
+    padding-right: 0;
     .navbar {
       background-color: #ffffff;
       border-bottom: none;
@@ -36,8 +36,8 @@ html {
       }
       .actionbar {
         margin-top: 0.45em;
-        min-width: 97%;
-        max-width: 97%;
+        min-width: 80%;
+        max-width: 80%;
       }
     }
     #fields {

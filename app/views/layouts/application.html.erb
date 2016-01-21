@@ -1,26 +1,18 @@
-kdubb branch:
-
-application.html
-to nav bar: changed to “Hello, username!”
-
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Slackoverflowed</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <head>
+    <title>Slackoverflowed</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-      <%= csrf_meta_tags %>
-        <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800' rel='stylesheet' type='text/css'>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+  </head>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
 
       <body>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -33,27 +25,29 @@ to nav bar: changed to “Hello, username!”
 
                   <%= yield(:question_bar) %>
 
+                    <!-- user logout -->
+                    <div class="nav_log_out">
+                      <% if user_signed_in? %>
+                      Hello,
+                      <strong><%= current_user.username %>!</strong>
+                      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 
-
-                    <div class= "nav_log_out">
-                      <% if user_signed_in? %> Hello, <strong><%= current_user.username %>!</strong>
-                        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
                       <% end %>
+                    </div>
+
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+
+          <%= yield %>
+
+          <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
+        </body>
+      </div>
+
     </div>
-
-
-    <%= yield %>
-
-      <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
-      </body>
   </div>
-</div>
-</div>
 
 </html>

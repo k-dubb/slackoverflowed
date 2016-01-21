@@ -16,7 +16,7 @@ class QuestionsController < ApplicationController
   # GET /questions/1
   # GET /questions/1.json
   def show
-
+      #@user_name = @questions.user.username
   end
 
   # GET /questions/new

@@ -6,28 +6,28 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-user = User.create! :username => 'John Doe', :email => 'john@gmail.com', :password => 'topsecret', :password_confirmation => 'topsecret'
-user = User.create! :username => 'seeds', :email => 'levi@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
-user = User.create! :username => '1seeds', :email => 'david@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
-user = User.create! :username => '2seeds', :email => 'kelli@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
-user = User.create! :username => '3seeds', :email => 'Jrizz@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
-user = User.create! :username => '4seeds', :email => 'My@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
-user = User.create! :username => '5seeds', :email => 'notMy@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
-user = User.create! :username => '6seeds', :email => 'getYourOwn@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
-user = User.create! :username => '7seeds', :email => 'HaveMy@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
-user = User.create! :username => '8seeds', :email => 'spread@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Jon Snow', :email => 'john@gmail.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Khal Drogo', :email => 'levi@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Jaime Lannister', :email => 'david@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Varys', :email => 'kelli@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Brienne of Tarth', :email => 'Jrizz@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Tywin Lannister', :email => 'My@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Bronn', :email => 'notMy@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Arya Stark', :email => 'getYourOwn@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Eddard Stark', :email => 'HaveMy@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
+user = User.create! :username => 'Tyrion Lannister', :email => 'spread@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
 
 
-question = Question.create! :body => 'yay', :user_id => '1'
-question = Question.create! :body => 'yay', :user_id => '2'
-question = Question.create! :body => 'yay', :user_id => '3'
-question = Question.create! :body => 'yay', :user_id => '4'
-question = Question.create! :body => 'yay', :user_id => '5'
-question = Question.create! :body => 'yay', :user_id => '6'
-question = Question.create! :body => 'yay', :user_id => '7'
-question = Question.create! :body => 'yay', :user_id => '8'
-question = Question.create! :body => 'yay', :user_id => '9'
-question = Question.create! :body => 'yay', :user_id => '10'
+question = Question.create! :body => 'If you ask a question, it will get answered', :user_id => '1'
+question = Question.create! :body => 'Can someone please slap me?', :user_id => '2'
+question = Question.create! :body => 'how do I use Internets?', :user_id => '3'
+question = Question.create! :body => 'merge issues?', :user_id => '4'
+question = Question.create! :body => 'anyone need help with anything', :user_id => '5'
+question = Question.create! :body => 'Need help with ux/ui', :user_id => '6'
+question = Question.create! :body => 'Why doesnt this work?', :user_id => '7'
+question = Question.create! :body => 'GitHub is being stupid, or is it just me?', :user_id => '8'
+question = Question.create! :body => 'Why is the nav bar wrapping??!!!', :user_id => '9'
+question = Question.create! :body => 'HELP! I have a question', :user_id => '10'
 
 
 

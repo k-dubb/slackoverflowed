@@ -16,52 +16,55 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
-a:link,
-a:active,
-a:visited {
-  font-size: 1.5em;
-  color: #323a4a;
-}
-a:hover {
-  color: #323a4a;
-  text-decoration: none;
-}
-.nav_log_out {
-  font-size: 1em;
-  text-align: right;
-  color: #323a4a;
-}
-.navbar-link {
-  padding-left: 0.75em;
-  color: #337ab7;
-}
-html {
-  body {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 2em;
-    background-color: #f58120;
-    color: #323a4a;
-    .navbar {
-      background-color: #ffffff;
-      border-bottom: none;
-      margin-bottom: 0;
-      margin-left: 0;
-      margin-right: 0;
-      .brand {
-        height: 15px;
-        img {
-          height: 40px;
-          margin-top: -.35em;
-        }
+$first-color: #f58120;
+$second-color: #ffffff;
+$third-color: #323a4a;
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2em;
+  background-color: $first-color;
+  color: $third-color;
+  a:link,
+  a:active,
+  a:visited {
+    font-size: 1.5em;
+    color: $third-color;
+  }
+  .navbar {
+    background-color: $second-color;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-height: 50px;
+    .brand {
+      height: 15px;
+      img {
+        height: 40px;
+        margin-top: -.35em;
       }
-      .form-horizontal {
-        max-width: 90%;
-        #actionbar {
-          margin-top: 0.45em;
-          min-width: 80%;
-          max-width: 80%;
-        }
-      }
+    }
+    .form-control {
+      margin-top: 5px;
+      font-size: 28px;
+      height: 40px;
+    }
+    .btn-default {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 1em;
+      text-align: right;
+      color: $third-color;
+    }
+  }
+  .content {
+    margin-left: 1em;
+    margin-right: 1em;
+    .greeting {
+      font-size: 1.5em;
+      text-align: right;
+      margin-top: -.10em;
     }
     #fields {
       margin-top: 6em;
@@ -69,7 +72,7 @@ html {
         font-size: 0.7em;
       }
       input {
-        background-color: #ffffff;
+        background-color: $second-color;
         margin-bottom: 0.75em;
       }
       label {
@@ -77,19 +80,14 @@ html {
       }
       h2 {
         font-size: 3em;
-        color: #ffffff;
-        margin-top: 1em;
+        color: $second-color;
+        margin-top: 0;
       }
       .button {
         font-size: 1.5em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
       }
-    }
-    .content {
-      margin-left: 1em;
-      margin-right: 1em;
-
     }
   }
 }

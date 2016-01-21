@@ -1,6 +1,8 @@
-<%= form_for @question, :html => {:class => "form-horizontal center", id: "actionbar"} do |f| %>
+<div class="row">
+<%= form_for @question, :html => {:class => "actionbar"} do |f| %>
   <!-- <div class="col-md-5"> -->
-    <%= f.text_field :body, class: "form-control", :placeholder => "A 140 character question. Brevity is the soul of wit." %>
-    <%= f.submit "Ask", class: "btn btn-default" %>
+    <%= f.text_field :body, class: "form-control askbar", :placeholder => "A 140 character question. Brevity is the soul of wit." %>
+    <%= f.submit "Ask", class: "btn btn-default askbutton" %>
     <% end %>
   <!-- </div> -->
+</div>

@@ -34,10 +34,13 @@ html {
           margin-top: -.35em;
         }
       }
-      .actionbar {
-        margin-top: 0.45em;
-        min-width: 80%;
-        max-width: 80%;
+      .form-horizontal {
+        max-width: 90%;
+        #actionbar {
+          margin-top: 0.45em;
+          min-width: 80%;
+          max-width: 80%;
+        }
       }
     }
     #fields {
@@ -75,16 +78,12 @@ a:hover {
   color: #323a4a;
   text-decoration: none;
 }
-label {
-  color: #ffffff;
-  font-weight: normal;
-}
-.nav_log_out{
+.nav_log_out {
   font-size: 1em;
   text-align: right;
-color: #323a4a;
+  color: #323a4a;
 }
-.navbar-link{
-  padding-left: .75em;
+.navbar-link {
+  padding-left: 0.75em;
   color: #337ab7;
 }

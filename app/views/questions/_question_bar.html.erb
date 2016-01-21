@@ -1,9 +1,6 @@
-<%= form_for @question, :html => {:class => "form-horizontal center"} do |f| %>
-                      <div class="form-group">
-                        <%= f.label :questions %>
-                        <div class="col-md-5">
-                          <%= f.text_field :body, class: "form-control", :placeholder => "hello" %>
-                      <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
-                 <% end %>
-                        </div>
-                      </div>
+<%= form_for @question, :html => {:class => "form-horizontal center", id: "actionbar"} do |f| %>
+  <!-- <div class="col-md-5"> -->
+    <%= f.text_field :body, class: "form-control", :placeholder => "A 140 character question. Brevity is the soul of wit." %>
+    <%= f.submit "Ask", class: "btn btn-default" %>
+    <% end %>
+  <!-- </div> -->

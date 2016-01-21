@@ -12,42 +12,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
+  <div class="container">
+    <body>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand brand" href="/questions">
+              <%= image_tag 'SlackOverflow_LogoMark.png'%>
+            </a>
+            <%= yield(:question_bar) %>
 
+          </div>
+        </div>
+        <!-- user logout -->
+        <!-- <div class="nav_log_out">
+        <% if user_signed_in? %>
+        Hello,
+        <p><%= current_user.username %>!</p>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'nav nav-pills'  %>
+        <% end %>
+      </div> -->
+      </nav>
+      <%= yield %>
+      <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
 
-      <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand pull-left brand" href="/questions">
-                <%= image_tag 'SlackOverflow_LogoMark.png'%>
-              </a>
-
-
-                  <%= yield(:question_bar) %>
-
-                    <!-- user logout -->
-                    <div class="nav_log_out">
-                      <% if user_signed_in? %>
-                      Hello,
-                      <strong><%= current_user.username %>!</strong>
-                      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-
-                      <% end %>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-
-          <%= yield %>
-
-          <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
-        </body>
-      </div>
-
-    </div>
+    </body>
   </div>
-
 </html>

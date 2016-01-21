@@ -23,8 +23,11 @@ a:visited {
   color: #323a4a;
 }
 a:hover {
-  color: #323a4a;
+  color: white;
   text-decoration: none;
+}
+.nav-nav-pills:hover{
+    color: #f58120;
 }
 .nav_log_out {
   font-size: 1em;

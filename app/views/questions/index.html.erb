@@ -22,5 +22,12 @@
 <h2>All questions:</h2>
 
     <%@questions_asked.each do |question|%>
+      <% future = Time.now + 30.minutes %>
+
+      <% if question.created_at <= future %>
+        <div class ='recentQuestions'><%= link_to question.body, question_path(question.id)%></div>
+      <% else %>
         <div class ='allQuestions'><%= link_to question.body, question_path(question.id)%></div>
+      <% end %>
+
     <% end %>

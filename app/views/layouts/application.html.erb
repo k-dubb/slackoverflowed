@@ -25,7 +25,16 @@
             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-default'  %>
           </div>
 
+<<<<<<< HEAD
           <!-- </div> -->
+=======
+        <div class="nav_log_out">
+          <% if user_signed_in? %>
+          Hello,
+          <div id="user"><%= current_user.username %>!</div>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'nav-nav-pills'  %>
+          <% end %>
+>>>>>>> 15c4bb7415e0b80665813aebf2c60d63f42864df
         </div>
     </nav>
     <div class="content">

@@ -20,6 +20,7 @@ $first-color: #f58120;
 $second-color: #ffffff;
 $third-color: #323a4a;
 $fourth-color: #139393;
+$fith-color: #ff9d4c;
 html {
   background-color: $third-color;
   font-weight: normal;
@@ -80,7 +81,7 @@ html {
         margin-left: 1em;
         margin-right: 1em;
         #recentQuestions {
-          background-color: $second-color;
+          background-color: $fith-color;
         }
         #notice {
           font-size: 1.5em;

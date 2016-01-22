@@ -8,7 +8,7 @@ class QuestionsController < ApplicationController
 
     #@user_questions = Question.order(created_at: :desc).select(:id, :body).limit(5)
 
-    @questions_asked = Question.order(created_at: :desc).select(:id, :body)
+    @questions_asked = Question.order(created_at: :desc).select(:id, :body, :updated_at)
 
     @question = Question.new
   end

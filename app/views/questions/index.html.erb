@@ -3,9 +3,6 @@
 <% end %>
 
 
-
-
-
 <div id="fields">
 
 <p id="notice"><%= notice %></p>
@@ -22,9 +19,8 @@
 <h2>All questions:</h2>
 
     <%@questions_asked.each do |question|%>
-      <% future = Time.now + 30.minutes %>
-
-      <% if question.created_at <= future %>
+      <% past = Time.now + (30.minutes) %>
+      <% if time_ago_in_words(question.updated_at).to_i <= time_ago_in_words(past).to_i %>
         <div class ='recentQuestions'><%= link_to question.body, question_path(question.id)%></div>
       <% else %>
         <div class ='allQuestions'><%= link_to question.body, question_path(question.id)%></div>

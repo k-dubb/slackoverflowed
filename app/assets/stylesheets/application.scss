@@ -24,8 +24,8 @@ $fith-color: #ff9d4c;
 
 #wrapper {
   background-color: $first-color;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 body {
   font-weight: normal;
@@ -49,8 +49,8 @@ body {
     color: $second-color;
   }
   .navbar {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: $second-color;
     border-bottom: none;
     margin-bottom: 0;
@@ -154,9 +154,9 @@ a.back-to-top {
   z-index: 999;
   right: 20px;
   bottom: 20px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
 }
 h6 {
   margin-bottom: 1.5em;

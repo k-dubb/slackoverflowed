@@ -16,17 +16,11 @@
   <body>
     <div id="wrapper">
       <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <div class="row">
-              <div class="col-md-12">
-                <a class="navbar-brand brand" href="/questions">
-                  <%= image_tag 'SlackOverflow_LogoMark.png'%>
-                </a>
-                <%= yield(:question_bar) %>
-              </div>
-            </div>
-          </div>
+        <div class="container-fluid container">
+          <a class="navbar-brand brand" href="/questions">
+            <%= image_tag 'SlackOverflow_LogoMark.png'%>
+          </a>
+          <%= yield(:question_bar) %>
         </div>
       </nav>
       <div class="content">
@@ -34,10 +28,12 @@
         <p class="greeting">Hello,
           <%= current_user.username %>!</p>
         <% end %>
-        <!-- user logout -->
         <%= yield %>
         <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
       </div>
+      <footer>
+        <small>© 2016, D.A, Kelli, Joe, and Levi.</small>
+      </footer>
     </div>
   </body>
 </html>

@@ -9,40 +9,35 @@
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800' rel='stylesheet' type='text/css'>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
-  <!-- <div class="container page"> -->
   <body>
-    <nav class="navbar navbar-default" role="navigation">
-      <!-- <div class="navbar-header"> -->
-      <div class="row">
-          <div class="col-md-12">
-            <a class="navbar-brand brand" href="/questions">
-              <%= image_tag 'SlackOverflow_LogoMark.png'%>
-            </a>
-            <%= yield(:question_bar) %>
-            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-default'  %>
+    <div id="wrapper">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="row">
+              <div class="col-md-12">
+                <a class="navbar-brand brand" href="/questions">
+                  <%= image_tag 'SlackOverflow_LogoMark.png'%>
+                </a>
+                <%= yield(:question_bar) %>
+              </div>
+            </div>
           </div>
-
-          <!-- </div> -->
-        <div class="nav_log_out">
-          <% if user_signed_in? %>
-          Hello,
-          <div id="user"><%= current_user.username %>!</div>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'nav-nav-pills'  %>
-          <% end %>
         </div>
-    </nav>
-    <div class="content">
-      <% if user_signed_in? %>
-      <p class="greeting">Hello,
-        <%= current_user.username %>!</p>
-      <% end %>
-      <!-- user logout -->
-      <%= yield %>
-      <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
+      </nav>
+      <div class="content">
+        <% if user_signed_in? %>
+        <p class="greeting">Hello,
+          <%= current_user.username %>!</p>
+        <% end %>
+        <!-- user logout -->
+        <%= yield %>
+        <script id="dsq-count-scr" src="//slackflow.disqus.com/count.js" async></script>
+      </div>
     </div>
   </body>
-  <!-- </div> -->
 </html>

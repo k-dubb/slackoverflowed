@@ -19,75 +19,109 @@
 $first-color: #f58120;
 $second-color: #ffffff;
 $third-color: #323a4a;
-
-body {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 2em;
-  background-color: $first-color;
-  color: $third-color;
-  a:link,
-  a:active,
-  a:visited {
-    font-size: 1.5em;
+$fourth-color: #139393;
+html {
+  background-color: $third-color;
+  body {
+    margin: 0 auto;
+    max-width: 980px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2em;
+    background-color: $first-color;
     color: $third-color;
-  }
-  .navbar {
-    background-color: $second-color;
-    border-bottom: none;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    max-height: 50px;
-    .brand {
-      height: 15px;
-      img {
-        height: 40px;
-        margin-top: -.35em;
-      }
-    }
-    .form-control {
-      margin-top: 5px;
-      font-size: 28px;
-      height: 40px;
-    }
-    .btn-default {
-      display: inline-block;
-      margin-top: 4px;
-      font-size: 1em;
-      text-align: right;
+    a:link,
+    a:active,
+    a:visited {
+      font-size: 1.5em;
       color: $third-color;
     }
-  }
-  .content {
-    margin-left: 1em;
-    margin-right: 1em;
-    .greeting {
-      font-size: 1.5em;
-      text-align: right;
-      margin-top: -.10em;
+    .navbar {
+      border-radius: 0px;
+      background-color: $second-color;
+      border-bottom: none;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+      max-height: 50px;
+      .brand {
+        height: 15px;
+        img {
+          height: 40px;
+          margin-top: -.35em;
+        }
+      }
+      .form-control {
+        text-align: left;
+        margin-top: 5px;
+        font-size: 28px;
+        height: 40px;
+        max-width: 95%;
+      }
+      .navbar-btn {
+        height: 40px;
+        font-size: 1em;
+        margin-top: 5px;
+        color: $third-color;
+        position: absolute;
+      }
     }
-    #fields {
-      margin-top: 6em;
-      #remember {
-        font-size: 0.7em;
-      }
-      input {
-        background-color: $second-color;
-        margin-bottom: 0.75em;
-      }
-      label {
-        font-size: 2em;
-      }
-      h2 {
-        font-size: 3em;
-        color: $second-color;
-        margin-top: 0;
-      }
-      .button {
+    .content {
+      margin-left: 1em;
+      margin-right: 1em;
+      #notice {
         font-size: 1.5em;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+        color: $fourth-color;
+      }
+      .greeting {
+        font-size: 1.5em;
+        text-align: right;
+        margin-bottom: 0;
+      }
+      #fields {
+        margin-top: 1em;
+        #remember {
+          font-size: 0.7em;
+        }
+        input {
+          background-color: $second-color;
+          margin-bottom: 0.75em;
+        }
+        label {
+          font-size: 2em;
+        }
+        h2 {
+          font-size: 3em;
+          color: $second-color;
+          margin-top: 1em;
+        }
+        .button {
+          font-size: 1.5em;
+          margin-top: 0.5em;
+          margin-bottom: 0.5em;
+        }
+      }
+      h3,
+      h4 {
+        color: $second-color;
+      }
+      p {
+        color: $fourth-color;
       }
     }
   }
 }
+// @media only screen and (max-width : 1200px) {
+//
+// }
+// @media only screen and (max-width : 992px) {
+//
+// }
+// @media only screen and (max-width : 768px) {
+//
+// }
+// @media only screen and (max-width : 480px) {
+//
+// }
+// @media only screen and (max-width : 320px) {
+//
+// }

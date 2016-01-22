@@ -18,16 +18,16 @@ user = User.create! :username => 'Eddard Stark', :email => 'HaveMy@seeds.com', :
 user = User.create! :username => 'Tyrion Lannister', :email => 'spread@seeds.com', :password => 'topsecret', :password_confirmation => 'topsecret'
 
 
-question = Question.create! :body => 'If you ask a question, it will get answered', :user_id => '1'
-question = Question.create! :body => 'Can someone please slap me?', :user_id => '2'
-question = Question.create! :body => 'how do I use Internets?', :user_id => '3'
-question = Question.create! :body => 'merge issues?', :user_id => '4'
-question = Question.create! :body => 'anyone need help with anything', :user_id => '5'
-question = Question.create! :body => 'Need help with ux/ui', :user_id => '6'
-question = Question.create! :body => 'Why doesnt this work?', :user_id => '7'
-question = Question.create! :body => 'GitHub is being stupid, or is it just me?', :user_id => '8'
-question = Question.create! :body => 'Why is the nav bar wrapping??!!!', :user_id => '9'
-question = Question.create! :body => 'HELP! I have a question', :user_id => '10'
+question = Question.create! :body => 'If you ask a question, it will get answered', :user_id => '1', :created_at => 1.days.ago, :updated_at => 1.days.ago
+question = Question.create! :body => 'Can someone please slap me?', :user_id => '2', :created_at => 1.days.ago, :updated_at => 1.days.ago
+question = Question.create! :body => 'how do I use Internets?', :user_id => '3', :created_at => 1.days.ago, :updated_at => 1.days.ago
+question = Question.create! :body => 'merge issues?', :user_id => '4', :created_at => 1.days.ago, :updated_at => 1.days.ago
+question = Question.create! :body => 'anyone need help with anything', :user_id => '5', :created_at => 1.days.ago, :updated_at => 1.days.ago
+question = Question.create! :body => 'Need help with ux/ui', :user_id => '6', :created_at => 1.days.ago, :updated_at => 1.days.ago
+question = Question.create! :body => 'Why doesnt this work?', :user_id => '7', :created_at => 1.days.ago, :updated_at => 1.days.ago
+question = Question.create! :body => 'GitHub is being stupid, or is it just me?', :user_id => '8', :created_at => 1.days.ago, :updated_at => 1.days.ago
+question = Question.create! :body => 'Why is the nav bar wrapping??!!!', :user_id => '9', :created_at => 1.days.ago, :updated_at => 1.days.ago
+question = Question.create! :body => 'HELP! I have a question', :user_id => '10', :created_at => 1.days.ago, :updated_at => 1.days.ago
 
 
 

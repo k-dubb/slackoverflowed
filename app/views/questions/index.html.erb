@@ -3,9 +3,6 @@
 <% end %>
 
 
-
-
-
 <div id="fields">
 
 <p id="notice"><%= notice %></p>
@@ -22,5 +19,19 @@
 <h2>All questions:</h2>
 
     <%@questions_asked.each do |question|%>
+
+      <% if question.updated_at >= Time.current - (30.minutes)  %>
+
+        <h6>This was asked <%=time_ago_in_words(question.updated_at)%> ago!</h6>
+
+        <div class ='allQuestions' id ='recentQuestions'>
+          <%= link_to question.body, question_path(question.id)%>
+
+        </div>
+      <% else %>
+
+        <h6>This was asked on <%=question.updated_at.strftime("%d %b. %Y")%></h6>
         <div class ='allQuestions'><%= link_to question.body, question_path(question.id)%></div>
+      <% end %>
+
     <% end %>

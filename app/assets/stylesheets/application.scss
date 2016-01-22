@@ -95,8 +95,8 @@ body {
     margin-bottom: 4em;
   }
   .content {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 0em;
+    margin-right: 0em;
     margin-bottom: -1.5em;
     #recentQuestions {
       background-color: $fith-color;
@@ -176,11 +176,14 @@ h6 {
   color: $fourth-color;
 }
 .jumbotron {
-  margin-top: 2em;
+  border-radius: none;
+  margin: 0;
+  margin-top: -.25em;
   background-color: $fourth-color;
   margin-bottom: 2em;
 }
 .jumbocon {
+  padding: 0;
   width: 100%;
 }
 // @media only screen and (max-width : 1200px) {

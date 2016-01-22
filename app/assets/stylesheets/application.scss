@@ -176,8 +176,12 @@ h6 {
   color: $fourth-color;
 }
 .jumbotron {
+  margin-top: 2em;
   background-color: $fourth-color;
-  margin-bottom: .25em;
+  margin-bottom: 2em;
+}
+.jumbocon {
+  width: 100%;
 }
 // @media only screen and (max-width : 1200px) {
 //

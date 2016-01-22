@@ -19,7 +19,7 @@
 <h2>All questions:</h2>
 
     <%@questions_asked.each do |question|%>
-      <% past = Time.now + (20.minutes) %>
+      <% past = Time.now + (30.minutes) %>
       <% if time_ago_in_words(question.updated_at).to_i <= time_ago_in_words(past).to_i %>
         <%=time_ago_in_words(question.updated_at).to_i%>
           <h6>This was asked <%=time_ago_in_words(question.updated_at)%> ago!</h6>

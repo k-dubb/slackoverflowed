@@ -21,117 +21,148 @@ $second-color: #ffffff;
 $third-color: #323a4a;
 $fourth-color: #4b5568;
 $fith-color: #ff9d4c;
-html {
-  background-color: $third-color;
+
+#wrapper {
+  background-color: $first-color;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+body {
   font-weight: normal;
-  body {
-    margin: 0 auto;
-    max-width: 980px;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 2em;
-    background-color: $first-color;
+  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 980px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2em;
+  background-color: $third-color;
+  color: $third-color;
+  a:link,
+  a:active,
+  a:visited {
+    font-size: 1.5em;
     color: $third-color;
-    a:link,
-    a:active,
-    a:visited {
-      font-size: 1.5em;
+  }
+  #question_body {
+    width: 935px;
+  }
+  h4 {
+    color: $second-color;
+  }
+  .navbar {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: $second-color;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-height: 50px;
+    .brand {
+      height: 15px;
+      img {
+        height: 40px;
+        margin-top: -.35em;
+      }
+    }
+    #post {
+      text-align: left;
+      margin-top: 5px;
+      font-size: 28px;
+      height: 40px;
+      max-width: 98%;
+      min-width: 80%;
+    }
+    .navbar-btn {
+      height: 40px;
+      font-size: 1em;
+      margin-top: 5px;
       color: $third-color;
-    }
-    small {
-      margin-left: 1em;
-    }
-    #question_body {
-      width: 935px;
-    }
-    h4 {
-      color: $second-color;
-    }
-    .navbar {
-      border-radius: 0;
-      background-color: $second-color;
-      border-bottom: none;
-      margin-bottom: 0;
-      margin-left: 0;
-      margin-right: 0;
-      max-height: 50px;
-        .brand {
-          height: 15px;
-          img {
-            height: 40px;
-            margin-top: -.35em;
-          }
-        }
-        #post {
-          text-align: left;
-          margin-top: 5px;
-          font-size: 28px;
-          height: 40px;
-          max-width: 98%;
-          min-width: 80%;
-        }
-        .navbar-btn {
-          height: 40px;
-          font-size: 1em;
-          margin-top: 5px;
-          color: $third-color;
-          position: absolute;
-        }
-      }
-      .content {
-        margin-left: 1em;
-        margin-right: 1em;
-        #recentQuestions {
-          background-color: $fith-color;
-        }
-        #notice {
-          font-size: 1.5em;
-          color: $fourth-color;
-        }
-        .greeting {
-          font-size: 1.5em;
-          text-align: right;
-          margin-bottom: 0;
-        }
-        #viewquestion {
-          color: $fourth-color;
-        }
-        #fields {
-          margin-top: 1em;
-          #remember {
-            font-size: 0.7em;
-          }
-          input {
-            background-color: $second-color;
-            margin-bottom: 0.75em;
-          }
-          label {
-            font-size: 2em;
-            font-weight: normal;
-          }
-          h2 {
-            font-size: 3em;
-            color: $second-color;
-            margin-top: 1em;
-          }
-          .button {
-            font-size: 1.5em;
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
-          }
-        }
-        h3 {
-          color: $second-color;
-        }
-        p {
-          color: $fourth-color;
-        }
-        footer {
-          margin-top: 4em;
-        }
-      }
+      position: absolute;
     }
   }
+  .content {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: -1.5em;
+    #recentQuestions {
+      background-color: $fith-color;
+    }
+    #notice {
+      font-size: 1.5em;
+      color: $fourth-color;
+    }
+    .greeting {
+      font-size: 1.5em;
+      text-align: right;
+      margin-bottom: 0;
+      margin-top: .25em;
+    }
+    #viewquestion {
+      color: $fourth-color;
+    }
+    #fields {
+      #remember {
+        vertical-align: middle;
+        font-size: 0.7em;
+        .rememberlabel {
+          color: $second-color;
+        }
+      }
+      input {
+        background-color: $second-color;
+        margin-bottom: 0.75em;
+      }
+      label {
+        font-size: 2em;
+        font-weight: normal;
+      }
+      h2 {
+        font-size: 3em;
+        color: $second-color;
+        margin-top: 1em;
+      }
+      .button {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+    }
+    h3 {
+      color: $second-color;
+    }
+    p {
+      color: $fourth-color;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2.5em;
+      margin-bottom: 2em;
+    }
+  }
+}
 
+small {
+  margin-left: 1.1em;
+}
+
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+h6 {
+  margin-bottom: 1.5em;
+  margin-top: -.25em;
+  color: $second-color;
+}
 // @media only screen and (max-width : 1200px) {
 //
 // }

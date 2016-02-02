@@ -1,4 +1,4 @@
-Welcome to Slackoverflow! A question and answer forum where General Assembly students can get help from fellow classmates and/or other GA classes.
+Welcome to Slackoverflowed! A question and answer forum where General Assembly students can get help from fellow classmates and/or other GA classes.
 
 ---
 

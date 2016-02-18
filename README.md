@@ -28,10 +28,6 @@ Lastly, we deployed to Ngrok!
 
 ---
 
-### Installation instructions: <Ngrok url>
-
----
-
 ### Unsolved problems:
 
 We wanted to try Sunspot to have a keyword search option but it turned out it was a little more complex than we thought and we didn't have enough time to fit it into our MVP scope. 

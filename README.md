@@ -4,7 +4,7 @@ Welcome to Slackoverflowed! A question and answer forum where General Assembly s
 
 ### Technologies used: 
 
-Ruby on Rails, Active Record, Devise, Disqus, Bootstrap, SCSS, Google Fonts
+Ruby on Rails, Active Record, Devise, Disqus, Postgres, Bootstrap, SCSS, Google Fonts
 
 ---
 

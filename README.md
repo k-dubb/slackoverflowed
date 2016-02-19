@@ -33,5 +33,3 @@ Lastly, we deployed to Ngrok!
 We wanted to try Sunspot to have a keyword search option but it turned out it was a little more complex than we thought and we didn't have enough time to fit it into our MVP scope. 
 
 We also wanted to set up single sign on with Disqus so users wouldn't have to sign in to our site AND sign on with disqus (or one of the other social platform sign-in options) in order to answer questions. Again, we just didn't have enough time to implement this.
-
-We had trouble figuring out where/how to change the error messages that occurred when certain parameters were not met when signing in. 

@@ -24,8 +24,6 @@ Disqus was used as the comment host so that our users could answer questions.
 
 Once we got our data working properly, we worked on SCSS to style the app. We also used Bootstrap and Google Fonts.
 
-Lastly, we deployed to Ngrok!
-
 ---
 
 ### Unsolved problems:
